@@ -1,0 +1,11 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Test
+      run: npm run test
